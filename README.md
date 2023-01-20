@@ -10,7 +10,7 @@
     des condensateurs et des inductances.
 ## Réalisation du TP
 #### Partie 1 : Filtrage et diagramme de Bode
-      *Nous souhaitons appliquer un filtre passe-haut pour supprimer la composante à 50 Hz
+      * Nous souhaitons appliquer un filtre passe-haut pour supprimer la composante à 50 Hz
       1. Signal x(t)=sin(2.pi.500.t) + sin(2.pi.400.t) + sin(2.pi.50.t) sur t = [0 5] avec Te = 0,0001 s
       2. Traçage du signal et sa TF
       3. Transmittance complexe H(f) du filtre passe haut de premier ordre est donnée par : H(f) = (K.j.w/wc) / (1 + j. w/wc). Avec K le gain du signal, 
@@ -21,6 +21,12 @@
           3.4 Choisissez wc qui vous semble optimal.
           3.5 Observez le signal y(t) obtenu, puis Comparer-le avec le signal que vous auriez souhaité obtenir. Conclusions ?
 #### Partie 2 : Dé-bruitage d'un signal sonore
+      * Le débruitage est un processus utilisé pour supprimer les bruits indésirables d'une image, d'un signal audio ou d'autres types de données. Il existe 
+      différentes techniques de débruitage, chacune ayant ses propres avantages et inconvénients en fonction de l'application. Certaines méthodes utilisent des 
+      filtres pour supprimer les fréquences indésirables, tandis que d'autres utilisent des algorithmes pour reconstruire les données à partir de données bruyantes. 
+      Le débruitage peut être utilisé pour améliorer la qualité des images, pour réduire le bruit dans les communications, pour améliorer la qualité audio et pour de 
+      nombreuses autres applications.
+
       1. Proposer une méthode pour supprimer ce bruit sur le signal.
           * Une méthode couramment utilisée pour supprimer les bruits haute fréquence sur un signal est l'utilisation d'un filtre passe-bas. Ce filtre permet de 
           laisser passer les fréquences basses du signal, tout en atténuant les fréquences hautes considérées comme du bruit.
