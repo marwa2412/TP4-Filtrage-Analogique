@@ -44,7 +44,7 @@
             wc=50, wc1=100, wc2=150 et wc3=200. Pour ce faire, on utilise la fonction **Hf** pour définir la transmittance complexe pour chaque fréquence de coupure 
             et multiplie la transformée de Fourier du signal "y" par la transmittance complexe pour obtenir les signaux filtrés "filtre", "filtre1", "filtre2" et 
             "filtre3".On utilise ensuite la fonction **ifft** pour obtenir les signaux filtrés dans le domaine temporel.
-             Enfin, on utilise à nouveau la fonction **fft** pour obtenir les transformées de Fourier des signaux filtrés dans le domaine fréquentiel.
+            Enfin, on utilise à nouveau la fonction **fft** pour obtenir les transformées de Fourier des signaux filtrés dans le domaine fréquentiel.
 <img width="858" alt="3 1" src="https://user-images.githubusercontent.com/86896531/213862859-8319d516-5113-48e4-87a4-7e383ca9b2b4.png">
 <img width="856" alt="3 2" src="https://user-images.githubusercontent.com/86896531/213862864-f56ba6af-07f9-4b8d-b51a-432a9c56be47.png">
 
@@ -77,7 +77,7 @@
           Il est important de noter que l'augmentation de l'ordre du filtre peut augmenter le temps de calcul nécessaire pour filtrer le signal.
 
 ## Conclusions
-         le filtrage analogique utilise des circuits électroniques pour filtrer les signaux analogiques. Dans cette manipulation, pour filtrer un signal audio, on a 
+         Le filtrage analogique utilise des circuits électroniques pour filtrer les signaux analogiques. Dans cette manipulation, pour filtrer un signal audio, on a 
          utilisé une transmittance complexe pour créer un filtre passe-bas. Cette méthode est similaire à l'utilisation d'un circuit électronique pour créer un 
          filtre passe-bas analogique. 
          Le filtrage analogique est généralement plus robuste et moins sujet aux erreurs, mais il peut être moins précis et moins flexible, par rapport au filtrage 
