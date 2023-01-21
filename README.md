@@ -58,23 +58,23 @@
       nombreuses autres applications.
 
       1. Proposer une méthode pour supprimer ce bruit sur le signal.
-          * Une méthode couramment utilisée pour supprimer les bruits haute fréquence sur un signal est l'utilisation d'un filtre passe-bas. Ce filtre permet de 
-          laisser passer les fréquences basses du signal, tout en atténuant les fréquences hautes considérées comme du bruit.
+          *Un filtre pas-bas permet de laisser passer les fréquences basses du signal, tout en atténuant les fréquences hautes considérées comme du bruit.
       2. Mettez-la en oeuvre. Quelle influence à le paramètre K du filtre que vous avez utilisé ?
-          * On définit une fréquence de coupure "fc" de 4000 Hz et on utilise cette valeur pour créer la transmittance complexe "Hf" d'un filtre passe-
-          bas de 1000ème ordre.Cette transmittance est utilisée pour filtrer le signal audio en la multipliant par la transformée de Fourier du signal.La 
+          * On définit une fréquence de coupure "fc" de 4500 Hz et on utilise cette valeur pour créer la transmittance complexe "Hf" d'un filtre passe-
+          bas de 1er ordre.Cette transmittance est utilisée pour filtrer le signal audio en la multipliant par la transformée de Fourier du signal.La 
           fonction "ifft" est pour obtenir le signal filtré dans le domaine temporel.
           
-<img width="839" alt="4" src="https://user-images.githubusercontent.com/86896531/213863401-5762eaca-31fb-431b-94c7-b6acbff0be10.png">
+<img width="848" alt="5" src="https://user-images.githubusercontent.com/86896531/213880459-89364f75-079a-4243-add4-e46f6bb85fc7.png">          
 
       3. Quelles remarques pouvez-vous faire notamment sur la sonorité du signal final.
           * La sonorité du signal final dépendra de la fréquence de coupure choisie pour le filtre. Si la fréquence de coupure est trop élevée, certaines fréquences
           importantes pour la musique pourraient être supprimées, ce qui aurait pour conséquence d'altérer la qualité sonore. Il est donc important de choisir une 
           fréquence de coupure qui ne supprime pas les fréquences importantes pour la musique.
       4. Améliorer la qualité de filtrage en augmentant l’ordre du filtre. 
-          * Pour améliorer la qualité de filtrage, vous pouvez augmenter l'ordre du filtre. Plus l'ordre du filtre est élevé, plus la réponse en fréquence sera 
+          * Pour améliorer la qualité de filtrage, on va augmenter l'ordre du filtre à 1000. Plus l'ordre du filtre est élevé, plus la réponse en fréquence sera 
           plate, ce qui permettra de supprimer efficacement les bruits haute fréquence tout en préservant les fréquences importantes pour la musique.
-          Il est important de noter que l'augmentation de l'ordre du filtre peut augmenter le temps de calcul nécessaire pour filtrer le signal.
+          
+<img width="839" alt="4" src="https://user-images.githubusercontent.com/86896531/213863401-5762eaca-31fb-431b-94c7-b6acbff0be10.png">
 
 ## Conclusions
          Le filtrage analogique utilise des circuits électroniques pour filtrer les signaux analogiques. Dans cette manipulation, pour filtrer un signal audio, on a 
