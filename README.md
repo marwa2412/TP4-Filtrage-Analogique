@@ -1,13 +1,14 @@
 # TP4-Filtrage Analogique
-## Ojectifs
-    1. Appliquer un filtre réel pour supprimer les composantes indésirables d’un signal. 
-    2. Améliorer la qualité de filtrage en augmentant l’ordre du filtre.
-    
 ## Introduction
     Le filtrage analogique est un type de filtrage qui utilise des circuits électroniques pour filtrer des signaux analogiques, c'est-à-dire des signaux continus
     de tension ou de courant. Il peut être utilisé pour séparer différentes bandes de fréquences d'un signal, pour supprimer les bruits indésirables ou pour 
     améliorer la qualité générale d'un signal. Les filtres analogiques peuvent être construits à l'aide de composants électroniques tels que des résistances, 
     des condensateurs et des inductances.
+    
+## Ojectifs
+    1. Appliquer un filtre réel pour supprimer les composantes indésirables d’un signal. 
+    2. Améliorer la qualité de filtrage en augmentant l’ordre du filtre.
+    
 ## Réalisation du TP
 #### Partie 1 : Filtrage et diagramme de Bode
       * Nous souhaitons appliquer un filtre passe-haut pour supprimer la composante à 50 Hz
