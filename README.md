@@ -13,8 +13,8 @@
       * Nous souhaitons appliquer un filtre passe-haut pour supprimer la composante à 50 Hz
       1. Signal x(t)=sin(2.pi.500.t) + sin(2.pi.400.t) + sin(2.pi.50.t) sur t = [0 5] avec Te = 0,0005 s
       2. Traçage du signal et sa TF
-        * Apès définir le signal sur t=0:Te:5 et avec Te=5e-4, on a calculé la TF du signal par la fonction **fft** et on a utilisé la fonction **fftshift** pour 
-        centrer les fréquences autour de zéro. Ainsi, par la fonction **plot**, on a pu tracer dans le premier graphe le signal temporel et sa transformée de Fourier 
+        * Apès définir le signal sur t=0:Te:5 et avec Te=5e-4, on a calculé la TF du signal par la fonction "fft" et on a utilisé la fonction "fftshift" pour 
+        centrer les fréquences autour de zéro. Ainsi, par la fonction "plot", on a pu tracer dans le premier graphe le signal temporel et sa transformée de Fourier 
         dans le deuxième sous-graphe
         
 <img width="840" alt="1 2" src="https://user-images.githubusercontent.com/86896531/213861413-43bc2939-eb56-41ba-b5ff-db51ac563049.png">
@@ -41,10 +41,10 @@
 
           3.3. Choisissez différentes fréquences de coupure et appliquez ce filtrage dans l'espace des fréquences.
             * Pour appliquer un filtrage fréquentiel, il faut d'abord effectuer un filtrage temporel sur le signal en utilisant différentes fréquences de coupure  
-            wc=50, wc1=100, wc2=150 et wc3=200. Pour ce faire, on utilise la fonction **Hf** pour définir la transmittance complexe pour chaque fréquence de coupure 
+            wc=50, wc1=100, wc2=150 et wc3=200. Pour ce faire, on utilise la fonction Hf" pour définir la transmittance complexe pour chaque fréquence de coupure 
             et multiplie la transformée de Fourier du signal "y" par la transmittance complexe pour obtenir les signaux filtrés "filtre", "filtre1", "filtre2" et 
-            "filtre3".On utilise ensuite la fonction **ifft** pour obtenir les signaux filtrés dans le domaine temporel.
-            Enfin, on utilise à nouveau la fonction **fft** pour obtenir les transformées de Fourier des signaux filtrés dans le domaine fréquentiel.
+            "filtre3".On utilise ensuite la fonction "ifft" pour obtenir les signaux filtrés dans le domaine temporel.
+            Enfin, on utilise à nouveau la fonction ""fft" pour obtenir les transformées de Fourier des signaux filtrés dans le domaine fréquentiel.
 <img width="858" alt="3 1" src="https://user-images.githubusercontent.com/86896531/213862859-8319d516-5113-48e4-87a4-7e383ca9b2b4.png">
 <img width="856" alt="3 2" src="https://user-images.githubusercontent.com/86896531/213862864-f56ba6af-07f9-4b8d-b51a-432a9c56be47.png">
 
